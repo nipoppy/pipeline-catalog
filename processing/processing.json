@@ -10,5 +10,9 @@
     {
         "name": "mriqc",
         "versions": ["23.1.0"]
+    },
+    {
+        "name": "tractoflow",
+        "versions": ["2.4.2"]
     }
 ]
