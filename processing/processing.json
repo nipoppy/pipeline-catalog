@@ -12,6 +12,10 @@
         "versions": ["23.1.0"]
     },
     {
+        "name": "qsiprep",
+        "versions": ["0.23.0"]
+    },
+    {
         "name": "tractoflow",
         "versions": ["2.4.2"]
     }
