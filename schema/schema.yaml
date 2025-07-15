@@ -1,0 +1,32 @@
+id: https://github.com/nipoppy/
+name: catalog
+
+classes:
+  Container:
+    tree_root: true
+    attributes:
+      pipelines:
+        description: A list of pipelines
+        range: Pipeline
+        multivalued: true
+  Pipeline:
+    attributes:
+      name:
+        description: The name of the pipeline
+        required: true
+      versions:
+        range: Version
+        required: True
+        multivalued: true
+        inlined: true
+        inlined_as_list: false
+  Version:
+    attributes:
+      version:
+        description: A pipeline version
+        identifier: true
+        pattern: ^[0-9]+(\.[0-9]+)*$
+      zenodo_ids:
+        description: The Zenodo IDs associated with this version
+        required: True
+        multivalued: true
